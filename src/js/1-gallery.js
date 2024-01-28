@@ -1,5 +1,5 @@
-//import SimpleLightbox from 'simplelightbox';
-//import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
     {
@@ -61,6 +61,7 @@ const imgTemplate = ({preview, original, description}) =>
 const galleryTemplate = () => {
     const markup = images.map(imgTemplate).join('\n\n');
     gallery.innerHTML = markup;
+    
 };
 
 galleryTemplate();
